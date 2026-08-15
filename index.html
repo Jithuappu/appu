@@ -11,7 +11,7 @@
   <meta name="theme-color" content="#16142e" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   
@@ -108,26 +108,26 @@
       position: absolute;
       top: 18px;
       right: 18px;
-      width: 42px;
-      height: 42px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.18);
-      border: 2px solid #ff758f;
+      background: rgba(255, 255, 255, 0.22);
+      border: 2.5px solid #ff758f;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
+      font-size: 20px;
       cursor: pointer;
       z-index: 50;
-      box-shadow: 0 4px 14px rgba(255, 75, 114, 0.4);
+      box-shadow: 0 4px 14px rgba(255, 75, 114, 0.5);
       backdrop-filter: blur(8px);
       transition: transform 0.2s ease;
     }
 
     .music-disk-btn.playing {
-      animation: spinVinyl 3.5s linear infinite;
+      animation: spinVinyl 3s linear infinite;
       border-color: #ffd166;
-      box-shadow: 0 0 16px rgba(255, 209, 102, 0.6);
+      box-shadow: 0 0 18px rgba(255, 209, 102, 0.7);
     }
 
     @keyframes spinVinyl {
@@ -891,13 +891,9 @@
   <div class="phone-mockup">
     
     <!-- Music Player Button -->
-    <div class="music-disk-btn" id="musicBtn" onclick="toggleBackgroundMusic()" title="Play Music">
+    <div class="music-disk-btn" id="musicBtn" onclick="toggleBackgroundMusic()" title="Play / Pause Song">
       🎵
     </div>
-    <audio id="bgAudio" loop preload="auto">
-      <source src="romantic_song.mp3" type="audio/mpeg">
-      <source src="./romantic_song.mp3" type="audio/mpeg">
-    </audio>
     <input type="file" id="musicPicker" accept="audio/*" style="display:none" onchange="loadChosenMusic(this)" />
 
     <div class="stars-backdrop">
@@ -1205,6 +1201,62 @@
   <script>
     const SECRET_PASS = "vavachi";
 
+    // Global audio instance with fallback candidates
+    const audioTrack = new Audio();
+    audioTrack.loop = true;
+    audioTrack.preload = "auto";
+
+    const songCandidates = [
+      "romantic_song.mp3",
+      "./romantic_song.mp3",
+      "Edd_Sheeran_-_Perfect_(mp3.pm).mp3"
+    ];
+    let candidateIndex = 0;
+    audioTrack.src = songCandidates[0];
+
+    audioTrack.addEventListener('error', () => {
+      candidateIndex++;
+      if (candidateIndex < songCandidates.length) {
+        audioTrack.src = songCandidates[candidateIndex];
+      }
+    });
+
+    let isMusicPlaying = false;
+
+    function playMusic() {
+      audioTrack.play().then(() => {
+        isMusicPlaying = true;
+        document.getElementById('musicBtn').classList.add('playing');
+      }).catch(err => {
+        console.log("Audio playback waiting for manual toggle:", err);
+      });
+    }
+
+    function toggleBackgroundMusic() {
+      const btn = document.getElementById('musicBtn');
+      if (!isMusicPlaying) {
+        audioTrack.play().then(() => {
+          isMusicPlaying = true;
+          btn.classList.add('playing');
+        }).catch(() => {
+          document.getElementById('musicPicker').click();
+        });
+      } else {
+        audioTrack.pause();
+        isMusicPlaying = false;
+        btn.classList.remove('playing');
+      }
+    }
+
+    function loadChosenMusic(input) {
+      if (input.files && input.files[0]) {
+        audioTrack.src = URL.createObjectURL(input.files[0]);
+        audioTrack.play();
+        isMusicPlaying = true;
+        document.getElementById('musicBtn').classList.add('playing');
+      }
+    }
+
     function checkPasscode() {
       const entered = document.getElementById('passInput').value.trim().toLowerCase();
       const overlay = document.getElementById('passcodeOverlay');
@@ -1215,6 +1267,7 @@
         sessionStorage.setItem('vava_unlocked', 'true');
         celebrateLove();
         
+        // Immediate user-gesture playback
         playMusic();
       } else {
         error.style.display = 'block';
@@ -1266,47 +1319,6 @@
       }
       updateTimer();
       setInterval(updateTimer, 1000);
-    }
-
-    let isMusicPlaying = false;
-
-    function playMusic() {
-      const audio = document.getElementById('bgAudio');
-      const btn = document.getElementById('musicBtn');
-      audio.play().then(() => {
-        isMusicPlaying = true;
-        btn.classList.add('playing');
-      }).catch(err => {
-        console.log("Autoplay waiting for touch:", err);
-      });
-    }
-
-    function toggleBackgroundMusic() {
-      const audio = document.getElementById('bgAudio');
-      const btn = document.getElementById('musicBtn');
-
-      if (!isMusicPlaying) {
-        audio.play().then(() => {
-          isMusicPlaying = true;
-          btn.classList.add('playing');
-        }).catch(() => {
-          document.getElementById('musicPicker').click();
-        });
-      } else {
-        audio.pause();
-        isMusicPlaying = false;
-        btn.classList.remove('playing');
-      }
-    }
-
-    function loadChosenMusic(input) {
-      if (input.files && input.files[0]) {
-        const audio = document.getElementById('bgAudio');
-        audio.src = URL.createObjectURL(input.files[0]);
-        audio.play();
-        isMusicPlaying = true;
-        document.getElementById('musicBtn').classList.add('playing');
-      }
     }
 
     function revealCoupon(card, message) {
