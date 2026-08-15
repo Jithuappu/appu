@@ -11,7 +11,7 @@
   <meta name="theme-color" content="#16142e" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   
@@ -992,16 +992,16 @@
           </p>
         </div>
 
-        <!-- Polaroid Showcase -->
+        <!-- Polaroid Showcase (Direct Clean Paths) -->
         <div class="polaroid-gallery">
-          <div class="polaroid-card p-left" onclick="expandImage(document.getElementById('polaroidImg1').src)">
-            <img id="polaroidImg1" src="photo1.png" onerror="this.onerror=null; this.src='photo1.jpg';" alt="My Vavachi" />
+          <div class="polaroid-card p-left" onclick="expandImage('photo1.png')">
+            <img id="polaroidImg1" src="photo1.png" alt="My Vavachi" />
             <span class="polaroid-caption">My Vavachi 🥰</span>
             <span class="expand-badge">🔍 view</span>
           </div>
 
-          <div class="polaroid-card p-right" onclick="expandImage(document.getElementById('polaroidImg2').src)">
-            <img id="polaroidImg2" src="photo2.jpg" onerror="this.onerror=null; this.src='photo2.png';" alt="Forever Us" />
+          <div class="polaroid-card p-right" onclick="expandImage('photo2.jpg')">
+            <img id="polaroidImg2" src="photo2.jpg" alt="Forever Us" />
             <span class="polaroid-caption">Forever Us 💍</span>
             <span class="expand-badge">🔍 view</span>
           </div>
