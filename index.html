@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   
-  <title>For My Kuti Pai Wifeeyyyyyyy ❤️</title>
+  <title>Happy Birthday Appu ❤️ Vavachi Surprise</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="My Vavachi ❤️" />
@@ -12,7 +12,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700;800&family=Nunito:wght@700;800;900&family=Pacifico&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   
   <style>
@@ -89,10 +89,10 @@
 
     .phone-mockup {
       width: 100%;
-      max-width: 385px;
-      height: 780px;
+      max-width: 395px;
+      height: 790px;
       max-height: 96vh;
-      background: rgba(22, 20, 46, 0.92);
+      background: rgba(22, 20, 46, 0.94);
       backdrop-filter: blur(20px);
       border: 4px solid rgba(255, 182, 193, 0.35);
       border-radius: 46px;
@@ -151,7 +151,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 20px 16px 14px 16px;
+      padding: 18px 16px 14px 16px;
       overflow-y: auto;
     }
 
@@ -177,7 +177,7 @@
       background: #ffffff;
       border: 3.5px solid #ff4b72;
       border-radius: 26px;
-      padding: 14px 12px;
+      padding: 12px 12px;
       position: relative;
       width: 100%;
       text-align: center;
@@ -185,7 +185,7 @@
     }
 
     .bubble-header h1 {
-      font-size: 18px;
+      font-size: 17.5px;
       color: #2b2b2b;
       font-weight: 800;
       line-height: 1.35;
@@ -214,15 +214,15 @@
       flex-direction: column;
       gap: 10px;
       width: 100%;
-      max-width: 250px;
+      max-width: 260px;
     }
 
     .btn {
       width: 100%;
-      height: 48px;
-      font-size: 16px;
+      height: 46px;
+      font-size: 15.5px;
       font-weight: 800;
-      border-radius: 26px;
+      border-radius: 24px;
       border: none;
       cursor: pointer;
       display: flex;
@@ -240,6 +240,18 @@
       background: linear-gradient(135deg, #ff477e 0%, #ff2a6d 100%);
       color: white;
       box-shadow: 0 8px 22px rgba(255, 42, 109, 0.55), inset 0 2px 0 rgba(255,255,255,0.3);
+    }
+
+    .btn-bday {
+      background: linear-gradient(135deg, #ff9f43 0%, #ff5252 100%);
+      color: white;
+      box-shadow: 0 8px 24px rgba(255, 82, 82, 0.6), inset 0 2px 0 rgba(255,255,255,0.35);
+      animation: pulseBday 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseBday {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); box-shadow: 0 8px 28px rgba(255, 159, 67, 0.8); }
     }
 
     .btn-poda {
@@ -299,7 +311,7 @@
       background: #ffffff;
       border: 3.5px solid #ffccd5;
       border-radius: 22px;
-      padding: 15px 14px;
+      padding: 14px 14px;
       text-align: center;
       margin-top: 10px;
       width: 100%;
@@ -334,9 +346,9 @@
 
     .prompt-label {
       color: #ffd6e0;
-      font-size: 16.5px;
+      font-size: 16px;
       font-weight: 800;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       text-align: center;
       text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     }
@@ -484,7 +496,7 @@
       display: flex;
       gap: 8px;
       justify-content: space-between;
-      margin: 10px 0 8px 0;
+      margin: 8px 0 6px 0;
     }
 
     .coupon-card {
@@ -819,6 +831,464 @@
       border-color: #ff477e;
       box-shadow: 0 0 10px rgba(255, 71, 126, 0.3);
     }
+
+    /* =========================================
+       PAGE 6: BIRTHDAY ROOM STYLING
+    ========================================= */
+    .bday-room-card {
+      position: relative;
+      width: 100%;
+      height: 470px;
+      background: radial-gradient(circle at 50% 30%, #302652 0%, #151126 100%);
+      border: 2.5px solid rgba(255, 182, 193, 0.4);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: inset 0 0 35px rgba(0, 0, 0, 0.6), 0 10px 25px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    /* Fairy String Lights */
+    .string-lights {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 42px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 4px 8px;
+      pointer-events: none;
+      z-index: 4;
+    }
+
+    .fairy-bulb {
+      width: 12px;
+      height: 16px;
+      border-radius: 50% 50% 45% 45%;
+      animation: bulbBlink 1.4s infinite alternate;
+      box-shadow: 0 0 12px currentColor;
+    }
+
+    @keyframes bulbBlink {
+      0% { opacity: 0.35; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1.15); filter: brightness(1.3); }
+    }
+
+    .bulb-1 { background: #ffd166; color: #ffd166; animation-delay: 0s; }
+    .bulb-2 { background: #ff477e; color: #ff477e; animation-delay: 0.25s; }
+    .bulb-3 { background: #06d6a0; color: #06d6a0; animation-delay: 0.5s; }
+    .bulb-4 { background: #118ab2; color: #118ab2; animation-delay: 0.75s; }
+    .bulb-5 { background: #ffbe0b; color: #ffbe0b; animation-delay: 0.15s; }
+    .bulb-6 { background: #ff70a6; color: #ff70a6; animation-delay: 0.6s; }
+    .bulb-7 { background: #a2d2ff; color: #a2d2ff; animation-delay: 0.35s; }
+
+    /* Bunting Banners */
+    .bunting-garland {
+      position: absolute;
+      top: 34px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-evenly;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .bunting-flag {
+      width: 0;
+      height: 0;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-top: 18px solid #ff477e;
+      transform-origin: top center;
+      animation: flagSway 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes flagSway {
+      0% { transform: rotate(-5deg); }
+      100% { transform: rotate(5deg); }
+    }
+
+    /* Floating Balloons */
+    .bday-balloon {
+      position: absolute;
+      font-size: 32px;
+      user-select: none;
+      pointer-events: none;
+      animation: floatBalloon 3.5s ease-in-out infinite alternate;
+      z-index: 2;
+    }
+
+    @keyframes floatBalloon {
+      0% { transform: translateY(0px) rotate(-3deg); }
+      100% { transform: translateY(-16px) rotate(4deg); }
+    }
+
+    .balloon-l1 { top: 68px; left: 10px; animation-delay: -0.5s; }
+    .balloon-l2 { top: 125px; left: 16px; font-size: 26px; animation-delay: -1.8s; }
+    .balloon-r1 { top: 64px; right: 12px; animation-delay: -1.2s; }
+    .balloon-r2 { top: 120px; right: 18px; font-size: 28px; animation-delay: -2.3s; }
+
+    /* Wall Photo Frames */
+    .wall-banner {
+      margin-top: 48px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1.5px dashed rgba(255, 209, 102, 0.8);
+      border-radius: 18px;
+      padding: 6px 16px;
+      color: #ffd166;
+      font-size: 13.5px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      z-index: 2;
+      text-align: center;
+    }
+
+    /* Stage Floor & Party Table */
+    .room-stage {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      z-index: 4;
+    }
+
+    .table-stand {
+      width: 290px;
+      height: 95px;
+      background: linear-gradient(180deg, #ff9bb2 0%, #ff6b8b 35%, #943d54 100%);
+      border-radius: 20px 20px 0 0;
+      box-shadow: 0 -4px 18px rgba(255, 107, 139, 0.35), inset 0 4px 6px rgba(255, 255, 255, 0.4);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      border-top: 4px solid #fff;
+    }
+
+    .table-cloth-drape {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 22px;
+      background: repeating-linear-gradient(90deg, #ffffff 0, #ffffff 18px, #ffeef2 18px, #ffeef2 36px);
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .party-presents {
+      position: absolute;
+      bottom: 6px;
+      display: flex;
+      gap: 155px;
+      font-size: 26px;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    /* Cake Assembly */
+    .cake-platter {
+      position: absolute;
+      top: -155px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .cake-stand-base {
+      width: 175px;
+      height: 10px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      border: 2px solid #e2e8f0;
+      margin-top: -2px;
+    }
+
+    /* Candles */
+    .candles-holder {
+      display: flex;
+      gap: 16px;
+      position: relative;
+      top: 6px;
+      z-index: 10;
+    }
+
+    .candle {
+      position: relative;
+      width: 10px;
+      height: 30px;
+      background: repeating-linear-gradient(45deg, #fff 0, #fff 5px, #ff477e 5px, #ff477e 10px);
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    .wick {
+      position: absolute;
+      top: -6px;
+      left: 4px;
+      width: 2px;
+      height: 6px;
+      background: #444;
+    }
+
+    .candle-flame {
+      position: absolute;
+      top: -22px;
+      left: -2px;
+      width: 14px;
+      height: 20px;
+      background: radial-gradient(ellipse at 50% 80%, #ffffff 0%, #ffee55 35%, #ff5722 80%);
+      border-radius: 50% 50% 35% 35%;
+      filter: drop-shadow(0 0 9px #ffca28);
+      animation: flickerFlame 0.18s infinite alternate ease-in-out;
+      transform-origin: bottom center;
+      transition: all 0.3s ease;
+    }
+
+    @keyframes flickerFlame {
+      0% { transform: scale(1) rotate(-2deg); }
+      100% { transform: scale(1.1) rotate(2.5deg); }
+    }
+
+    .candle.extinguished .candle-flame {
+      opacity: 0;
+      transform: scale(0.1);
+      pointer-events: none;
+    }
+
+    .smoke-puff {
+      position: absolute;
+      top: -24px;
+      left: -3px;
+      width: 16px;
+      height: 16px;
+      background: rgba(220, 220, 220, 0.7);
+      border-radius: 50%;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .candle.extinguished .smoke-puff {
+      animation: smokeDrift 1.2s forwards ease-out;
+    }
+
+    @keyframes smokeDrift {
+      0% { opacity: 0.8; transform: translateY(0) scale(0.6); }
+      100% { opacity: 0; transform: translateY(-28px) scale(2.2); filter: blur(4px); }
+    }
+
+    /* Cake Tiers */
+    .cake-body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .cake-tier-top {
+      width: 105px;
+      height: 48px;
+      background: linear-gradient(180deg, #fff5eb 0%, #ffd6ba 100%);
+      border-radius: 14px 14px 8px 8px;
+      position: relative;
+      box-shadow: inset 0 4px 6px #ffffff, 0 3px 8px rgba(0,0,0,0.25);
+      border: 2px solid #fec89a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .cake-tier-bottom {
+      width: 155px;
+      height: 60px;
+      background: linear-gradient(180deg, #ffccd5 0%, #ff8fa3 100%);
+      border-radius: 16px 16px 10px 10px;
+      position: relative;
+      margin-top: -6px;
+      box-shadow: inset 0 5px 6px #ffffff, 0 5px 12px rgba(0,0,0,0.35);
+      border: 2.5px solid #ff758f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      padding: 0 4px;
+      overflow: hidden;
+    }
+
+    .frosting-drips {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 12px;
+      background: radial-gradient(circle at 10px 0, #ffffff 10px, transparent 11px);
+      background-size: 20px 20px;
+      opacity: 0.95;
+    }
+
+    .berries-row {
+      position: absolute;
+      top: -8px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .berry {
+      font-size: 13px;
+      filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
+    }
+
+    .cake-inscription {
+      font-family: 'Pacifico', cursive;
+      font-size: 13px;
+      color: #9d0208;
+      font-weight: 700;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+      text-align: center;
+      line-height: 1.15;
+      position: relative;
+      z-index: 3;
+    }
+
+    /* Cake Slicing Interactive States */
+    .cake-cut-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: #ffd166;
+      box-shadow: 0 0 10px #ff2a6d;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+
+    .cake-body.cut .cake-tier-top {
+      clip-path: polygon(0 0, 52% 0, 52% 100%, 0 100%);
+      transform: translateX(-6px) rotate(-1deg);
+    }
+
+    .cake-slice-separated {
+      position: absolute;
+      top: 26px;
+      right: -2px;
+      width: 48px;
+      height: 98px;
+      display: none;
+      animation: sliceOut 0.5s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 9;
+    }
+
+    @keyframes sliceOut {
+      0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+      100% { transform: translate(22px, -8px) rotate(14deg); opacity: 1; }
+    }
+
+    .slice-visual {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #ffd6ba 30%, #ff8fa3 100%);
+      border-radius: 8px 14px 10px 8px;
+      border: 2px solid #ff477e;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    /* Interactive Knife Pointer */
+    .knife-tool {
+      position: absolute;
+      top: 45%;
+      left: 68%;
+      font-size: 34px;
+      cursor: pointer;
+      display: none;
+      animation: hoverKnife 1.2s infinite alternate ease-in-out;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
+      z-index: 25;
+      user-select: none;
+    }
+
+    @keyframes hoverKnife {
+      0% { transform: translateY(0) rotate(-15deg); }
+      100% { transform: translateY(-12px) rotate(5deg); }
+    }
+
+    .knife-guide-pill {
+      position: absolute;
+      top: 15px;
+      background: #ff2a6d;
+      color: #fff;
+      font-size: 11.5px;
+      font-weight: 800;
+      padding: 5px 12px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(255, 42, 109, 0.6);
+      white-space: nowrap;
+      left: -35px;
+      animation: pulseGlow 1.5s infinite alternate;
+    }
+
+    .cake-toast-box {
+      position: absolute;
+      top: 25px;
+      left: 14px;
+      right: 14px;
+      background: rgba(255, 255, 255, 0.95);
+      border: 3px solid #ff477e;
+      border-radius: 20px;
+      padding: 12px 14px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      z-index: 30;
+      display: none;
+      animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    .cake-toast-box h3 {
+      font-size: 15px;
+      color: #ff2a6d;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+
+    .cake-toast-box p {
+      font-size: 12.5px;
+      color: #333;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .bday-action-tip {
+      font-size: 13px;
+      color: #ffd166;
+      font-weight: 800;
+      text-align: center;
+      margin: 4px 0 6px 0;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
   </style>
 </head>
 <body>
@@ -881,6 +1351,7 @@
         <div class="interaction-box">
           <div class="btn-group">
             <button class="btn btn-yes" onclick="goToPage(2)">Yes ❤️</button>
+            <button class="btn btn-bday" onclick="goToPage(6)">🎉 Go to Appu's B'day Room 🎂</button>
             <button class="btn btn-poda" onclick="showPodaMessage('podaMessage1')">ni poda ⭐</button>
           </div>
 
@@ -988,28 +1459,25 @@
         </div>
 
         <div class="speech-bubble" style="display: block; margin-top: 4px; padding: 8px 12px;">
-          <p style="font-size: 14px; line-height: 1.45; color: #ff2a6d;">
+          <p style="font-size: 13.5px; line-height: 1.45; color: #ff2a6d;">
             i also miss u soo much vavachi wifyy ketivale more than u can imagin 🥺💖💍✨🥰
           </p>
         </div>
 
         <!-- Polaroid Showcase -->
         <div class="polaroid-gallery">
-          <div class="polaroid-card p-left" onclick="expandImage('photo1.jpg')">
-            <img id="polaroidImg1" src="photo1.jpg" alt="My Vavachi" />
+          <div class="polaroid-card p-left" onclick="expandImage(this.querySelector('img').src)">
+            <img id="polaroidImg1" src="photo1.jpg" onerror="this.src='https://placehold.co/300x300/ffccd5/ff2a6d?text=My+Vavachi+❤️'" alt="My Vavachi" />
             <span class="polaroid-caption">My Vavachi 🥰</span>
             <span class="expand-badge">🔍 view</span>
           </div>
 
-          <div class="polaroid-card p-right" onclick="expandImage('photo2.jpg')">
-            <img id="polaroidImg2" src="photo2.jpg" alt="Forever Us" />
+          <div class="polaroid-card p-right" onclick="expandImage(this.querySelector('img').src)">
+            <img id="polaroidImg2" src="photo2.jpg" onerror="this.src='https://placehold.co/300x300/ffd6ba/ff477e?text=Forever+Us+💍'" alt="Forever Us" />
             <span class="polaroid-caption">Forever Us 💍</span>
             <span class="expand-badge">🔍 view</span>
           </div>
         </div>
-
-        <input type="file" id="pPicker1" accept="image/*" style="display:none" onchange="loadPolaroid(1, this)" />
-        <input type="file" id="pPicker2" accept="image/*" style="display:none" onchange="loadPolaroid(2, this)" />
 
         <!-- Love Coupons -->
         <div class="coupons-container">
@@ -1029,13 +1497,13 @@
 
         <div class="interaction-box">
           <div class="btn-group">
-            <button class="btn btn-yes" onclick="celebrateLove()">Shower Love ❤️🎉</button>
+            <button class="btn btn-bday" onclick="goToPage(6)">🎂 Open Birthday Room 🎉</button>
             <button class="btn btn-poda" onclick="goToPage(5)">Our Love Roadmap 🗺️💕</button>
             <button class="back-btn" onclick="goToPage(3)">← Previous</button>
           </div>
         </div>
 
-        <div class="bottom-art-wrapper" style="height: 140px;">
+        <div class="bottom-art-wrapper" style="height: 120px;">
           <img class="bottom-art shared-art" src="bedtime.webp" alt="Peach & Goma" />
         </div>
       </div>
@@ -1104,8 +1572,8 @@
               <div class="node-dot">🎉</div>
               <div class="node-card">
                 <div class="node-tag">Today • Current Checkpoint</div>
-                <div class="node-title">4.6 Years Completed! 🥺💖</div>
-                <div class="node-desc">4 Years & 6 Months of unconditional love, missing each other & growing stronger together!</div>
+                <div class="node-title">4.6+ Years & Counting! 🥺💖</div>
+                <div class="node-desc">Years of unconditional love, laughter, caring & growing stronger together!</div>
               </div>
             </div>
 
@@ -1149,8 +1617,141 @@
 
         <div class="interaction-box" style="margin-top: 6px;">
           <div class="btn-group">
+            <button class="btn btn-bday" onclick="goToPage(6)">🎂 Go to Birthday Room 🎉</button>
             <button class="btn btn-yes" onclick="goToPage(1)">Start Again from First 🥰💌</button>
             <button class="back-btn" onclick="goToPage(4)">← Back to Photos</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 6: DEDICATED BIRTHDAY PARTY ROOM -->
+      <div id="page6" class="page">
+        <div class="bubble-header">
+          <span class="header-hearts hh-left">🎂✨</span>
+          <h1>Happy Birthday Appu! 🎉❤️</h1>
+          <span class="header-hearts hh-right">🎈💖</span>
+        </div>
+
+        <div class="bday-action-tip" id="bdayTip">
+          🕯️ Tap the candle flame to blow it out!
+        </div>
+
+        <!-- The Decorated Room View -->
+        <div class="bday-room-card" id="bdayRoom">
+
+          <!-- Glowing fairy string lights -->
+          <div class="string-lights">
+            <div class="fairy-bulb bulb-1"></div>
+            <div class="fairy-bulb bulb-2"></div>
+            <div class="fairy-bulb bulb-3"></div>
+            <div class="fairy-bulb bulb-4"></div>
+            <div class="fairy-bulb bulb-5"></div>
+            <div class="fairy-bulb bulb-6"></div>
+            <div class="fairy-bulb bulb-7"></div>
+          </div>
+
+          <!-- Bunting Triangles Garland -->
+          <div class="bunting-garland">
+            <div class="bunting-flag" style="border-top-color:#ff477e;"></div>
+            <div class="bunting-flag" style="border-top-color:#ffd166; animation-delay:-0.5s;"></div>
+            <div class="bunting-flag" style="border-top-color:#06d6a0; animation-delay:-1.2s;"></div>
+            <div class="bunting-flag" style="border-top-color:#118ab2; animation-delay:-1.8s;"></div>
+            <div class="bunting-flag" style="border-top-color:#ff9f43; animation-delay:-0.3s;"></div>
+            <div class="bunting-flag" style="border-top-color:#a2d2ff; animation-delay:-1.5s;"></div>
+            <div class="bunting-flag" style="border-top-color:#ff758f; animation-delay:-0.8s;"></div>
+          </div>
+
+          <!-- Floating colorful balloons -->
+          <div class="bday-balloon balloon-l1">🎈</div>
+          <div class="bday-balloon balloon-l2">✨</div>
+          <div class="bday-balloon balloon-r1">🎈</div>
+          <div class="bday-balloon balloon-r2">🎉</div>
+
+          <!-- Room banner -->
+          <div class="wall-banner">
+            ✨ Happy Birthday Appu Kutti Mole 👑 ❤️
+          </div>
+
+          <!-- Surprise Toast Message upon cake cut -->
+          <div id="cakeToastBox" class="cake-toast-box">
+            <h3>YUMMYYYY! 🍰✨ Happy B'day Appu!</h3>
+            <p>Here is your sweet first slice, my vavachi! Wishing my sweetest wifeey a lifetime of laughter, wealth, cuddles and infinite joy with me! Ummaaa! 💖🥺</p>
+          </div>
+
+          <!-- Hand Knife Cutting Tool -->
+          <div id="knifeTool" class="knife-tool" onclick="cutTheCake()">
+            <span class="knife-guide-pill">👉 Tap / Slice Cake!</span>
+            🔪
+          </div>
+
+          <!-- Cake and Table Setup -->
+          <div class="room-stage">
+            <div class="table-stand">
+              <div class="table-cloth-drape"></div>
+
+              <div class="party-presents">
+                <span>🎁</span>
+                <span>🎁</span>
+              </div>
+
+              <!-- Cake Platter -->
+              <div class="cake-platter" id="cakePlatter" onclick="handleCakeInteraction()">
+                
+                <!-- Candles -->
+                <div class="candles-holder">
+                  <div class="candle" id="candleEl" onclick="blowCandle(event)">
+                    <div class="wick"></div>
+                    <div class="candle-flame" id="candleFlame"></div>
+                    <div class="smoke-puff"></div>
+                  </div>
+                </div>
+
+                <!-- Cake Structure -->
+                <div class="cake-body" id="cakeBody">
+                  <div class="cake-cut-line" id="cutLine"></div>
+
+                  <!-- Top Tier with Fresh Strawberries & Cream -->
+                  <div class="cake-tier-top">
+                    <div class="berries-row">
+                      <span class="berry">🍓</span>
+                      <span class="berry">🍒</span>
+                      <span class="berry">🍓</span>
+                    </div>
+                    <div class="frosting-drips"></div>
+                    <div style="font-size: 11px; font-weight: 800; color: #ff2a6d; z-index:2; margin-top:10px;">
+                      🎂 ✨
+                    </div>
+                  </div>
+
+                  <!-- Bottom Tier with Custom Frosting Inscription -->
+                  <div class="cake-tier-bottom">
+                    <div class="frosting-drips"></div>
+                    <div class="cake-inscription">
+                      Happy B'day<br>Appu ❤️
+                    </div>
+                  </div>
+
+                  <!-- Cut Slice -->
+                  <div class="cake-slice-separated" id="cakeSlice">
+                    <div class="slice-visual">
+                      <span>🍰</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cake-stand-base"></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="interaction-box" style="margin-top: 4px;">
+          <div class="btn-group">
+            <button class="btn btn-yes" onclick="celebrateLove()">Pop Confetti & Hearts 🎉❤️</button>
+            <button class="btn btn-poda" onclick="goToPage(4)">← Back to Polaroids</button>
+            <button class="back-btn" onclick="goToPage(1)">Home Page 💌</button>
           </div>
         </div>
       </div>
@@ -1275,22 +1876,6 @@
       }
     }
 
-    function triggerPolaroidUpload(num) {
-      document.getElementById('pPicker' + num).click();
-    }
-
-    function loadPolaroid(num, input) {
-      if (input.files && input.files[0]) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          const data = e.target.result;
-          document.getElementById('polaroidImg' + num).src = data;
-          localStorage.setItem('polaroid_img_' + num, data);
-        };
-        reader.readAsDataURL(input.files[0]);
-      }
-    }
-
     function goToPage(pageNumber) {
       const pages = document.querySelectorAll('.page');
       pages.forEach(p => p.classList.remove('active'));
@@ -1312,6 +1897,11 @@
 
       if (pageNumber === 4 || pageNumber === 5) {
         celebrateLove();
+      }
+
+      if (pageNumber === 6) {
+        // Welcome celebration for birthday room
+        celebrateBdayPoppers();
       }
 
       if (pageNumber === 5) {
@@ -1413,6 +2003,95 @@
           colors: ['#ff477e', '#ff758f', '#ffd166', '#ffffff']
         });
       }
+    }
+
+    function celebrateBdayPoppers() {
+      if (typeof confetti === 'function') {
+        // Left cannon burst
+        confetti({
+          particleCount: 70,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0.1, y: 0.7 },
+          colors: ['#ff477e', '#ffd166', '#06d6a0', '#118ab2', '#ffffff']
+        });
+        // Right cannon burst
+        confetti({
+          particleCount: 70,
+          angle: 120,
+          spread: 55,
+          origin: { x: 0.9, y: 0.7 },
+          colors: ['#ff477e', '#ffd166', '#ff9f43', '#ff70a6', '#ffffff']
+        });
+      }
+    }
+
+    /* =========================================
+       PAGE 6 BIRTHDAY LOGIC: CANDLE & CAKE CUTTING
+    ========================================= */
+    let candleBlown = false;
+    let cakeCut = false;
+
+    function blowCandle(e) {
+      if (e) e.stopPropagation();
+      if (candleBlown) return;
+
+      candleBlown = true;
+      const candle = document.getElementById('candleEl');
+      candle.classList.add('extinguished');
+
+      // Update Tip
+      const tip = document.getElementById('bdayTip');
+      tip.innerText = "✨ Yay! Candle blown! Now slice the cake! 🔪🍰";
+      tip.style.color = "#06d6a0";
+
+      // Big popper confetti celebration
+      celebrateBdayPoppers();
+      setTimeout(celebrateLove, 400);
+
+      // Show knife cutting tool
+      const knife = document.getElementById('knifeTool');
+      knife.style.display = 'block';
+    }
+
+    function handleCakeInteraction() {
+      if (!candleBlown) {
+        blowCandle();
+      } else if (!cakeCut) {
+        cutTheCake();
+      }
+    }
+
+    function cutTheCake() {
+      if (!candleBlown) {
+        blowCandle();
+        return;
+      }
+      if (cakeCut) return;
+
+      cakeCut = true;
+      const cakeBody = document.getElementById('cakeBody');
+      const knife = document.getElementById('knifeTool');
+      const cakeSlice = document.getElementById('cakeSlice');
+      const toastBox = document.getElementById('cakeToastBox');
+      const tip = document.getElementById('bdayTip');
+
+      // Hide knife
+      knife.style.display = 'none';
+
+      // Perform slice cut
+      cakeBody.classList.add('cut');
+      cakeSlice.style.display = 'block';
+
+      // Reveal romantic birthday toast
+      toastBox.style.display = 'block';
+      tip.innerText = "🎉 Happy Birthday Appu Vavachi! ❤️ Enjoy your cake!";
+      tip.style.color = "#ff758f";
+
+      // Heart and confetti explosion
+      celebrateBdayPoppers();
+      celebrateLove();
+      setTimeout(celebrateBdayPoppers, 600);
     }
   </script>
 
